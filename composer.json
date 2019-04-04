@@ -1,0 +1,9 @@
+{
+    "require": {
+        "slim/slim": "^3.0",
+        "illuminate/database": "^5.8",
+        "respect/validation": "^1.1",
+        "vlucas/phpdotenv": "^3.3",
+        "monolog/monolog": "^1.24"
+    }
+}
