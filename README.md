@@ -36,6 +36,10 @@ The Quotes New Tab API is built in PHP using the [Slim](http://www.slimframework
 
 Have a bug or a feature request for the API? Please first read the [issue guidelines](https://github.com/quotesnewtab/api/blob/master/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/quotesnewtab/api/issues/new).
 
+## Contributing
+
+For more information on how to contribute please see the [contribution guidelines](https://github.com/quotesnewtab/api/blob/master/CONTRIBUTING.md).
+
 ## License
 
 Code released under the [MIT License](https://github.com/quotesnewtab/api/blob/master/LICENSE).
