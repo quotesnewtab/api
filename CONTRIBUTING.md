@@ -1,6 +1,6 @@
-# Contributing to Quotes New Tab API
+# Contribution Guidelines
 
-Looking to contribute something to our API? **Here's how you can help.**
+**First off, thanks for taking the time to contribute!** 🤗
 
 Please take a moment to review this document in order to make the contribution
 process easy and effective for everyone involved.
@@ -10,7 +10,6 @@ the developers managing and developing this open source project. In return,
 they should reciprocate that respect in addressing your issue or assessing
 patches and features.
 
-
 ## Using the issue tracker
 
 The [issue tracker](https://github.com/quotesnewtab/api/issues) is
@@ -19,13 +18,13 @@ and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
 
 * Please **do not** derail or troll issues. Keep the discussion on topic and
-  respect the opinions of others.
+respect the opinions of others.
 
-* Please **do not** post comments consisting solely of "+1" or ":thumbsup:".
-  Use [GitHub's "reactions" feature](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/)
-  instead. We reserve the right to delete comments which violate this rule.
+* Please **do not** post comments consisting solely of "+1" or "👍".
+Use [GitHub's "reactions" feature](https://blog.github.com/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/)
+instead. We reserve the right to delete comments which violate this rule.
 
-* Please **do not** open issues regarding the extension itself, this repository is reserved for the API only. If you want to report a bug or request a feature for the extension, do it [here](https://github.com/quotesnewtab/quotesnewtab/issues).
+* Please **do not** open issues regarding the extension itself, this repository is reserved for the API only. If you want to report a bug or request a feature for the extension, do it [here](https://github.com/quotesnewtab/api/issues).
 
 
 ## Issues and labels
@@ -42,49 +41,67 @@ Our bug tracker utilizes several labels to help organize and identify issues. He
 
 For a complete look at our labels, see the [project labels page](https://github.com/quotesnewtab/api/labels).
 
+## Pull Requests
 
-## Bug reports
+Pull requests for new features, bug fixes, etc. are often appreciated.
 
+**Working on your first Pull Request?** You can learn how from this *free* series
+[How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
 
-Guidelines for bug reports:
+Guidelines for pull requests:
 
-1. **Use the GitHub issue search** &mdash; check if the issue has already been
-   reported.
+* **Make your commit messages as descriptive as possible.** Include as much information as you can. Explain anything that the file diffs themselves won’t make apparent.
+* **Document your pull request.** Explain your fix and link to the relevant issue.
+* **Make sure the target of your pull request is the relevant branch.** Most of bugfix or new feature should go to the `master` branch.
+* **Include only related work.** If your pull request has unrelated commit, it won't be accepted.
 
-2. **Confirm it is an API problem** &mdash; test your own internet connection.
+## Feature Requests
 
-2. **Take note of the time** &mdash; write down the time in [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) when the bug occurred.
+Before creating an feature request, please search to see if someone has requested the feature already. If there is an open request, please add a 👍.
 
+If the feature has not already been requested, [create an issue](https://github.com/quotesnewtab/api/issues/new?title=Feature%20request:) with a title of `Feature request: <feature name>` and add as much information as possible.
 
-A good bug report shouldn't leave others needing to chase you up for more
-information. Please try to be as detailed as possible in your report.
+## Bug Reports
 
-Example:
+Before reporting an issue, please search to see if someone has filed a similar issue before. If there is already an open issue, please add a 👍 and/or leave a comment with additional information.
 
-> Short and descriptive example bug report title
->
-> A summary of the issue.
->
-> **Endpoint:** `https://api.quotesnewtab.com/v1/quotes`
->
-> **Time of bug:** 2019-04-04 16:24:38
->
-> Any other information you want to share that is relevant to the issue being
-> reported. This might include the lines of code that you have identified as
-> causing the bug, and potential solutions (and your opinions on their
-> merits).
+When creating a new issue make sure to include the following:
 
-## Feature requests
+* Time of bug. This makes it easier for us to figure out what went wrong when looking at the error logs. Make sure it is in [UTC-format](https://en.wikipedia.org/wiki/Coordinated_Universal_Time).
+* Steps to reproduce. Even if the step is small, **include it!** Include the actual result and what you expected.
+* Any message or error you get in the response, if you do.
+* A screenshot of any visual bug.
 
-Feature requests are welcome. But take a moment to find out whether your idea
-fits with the scope and aims of the project. It's up to *you* to make a strong
-case to convince the project's developers of the merits of this feature. Please
-provide as much detail and context as possible.
+Here is what a great bug report would look like:
 
+```md
+## Prerequisites
 
-## Pull requests
+Time of bug: 2019-04-05 14:31:38
 
-> Will fill in pull requests guidelines later.
+## Step to reproduce
+
+1. Make a `GET` request to endpoint `https://api.quotesnewtab.com/v1/quotes/random`
+2. Get response.
+ 
+### Actual behavior:
+
+Response is empty.
+
+### Expected behavior
+
+Response contains a random quote.
+
+## Any message or error
+
+No response error.
+...
+
+## Screenshot
+
+Link to screenshot
+...
+```
 
 ## License
 
