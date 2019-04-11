@@ -26,18 +26,17 @@ instead. We reserve the right to delete comments which violate this rule.
 
 * Please **do not** open issues regarding the extension itself, this repository is reserved for the API only. If you want to report a bug or request a feature for the extension, do it [here](https://github.com/quotesnewtab/api/issues).
 
-
 ## Issues and labels
 
 Our bug tracker utilizes several labels to help organize and identify issues. Here's what they represent and how we use them:
 
-- `bug` - Issues that are identifying a bug.
-- `docs` - Issues for improving or updating our documentation.
-- `duplicate` - Issues that already exist.
-- `feature` - Issues asking for a new feature to be added, or an existing one to be extended or modified.
-- `help wanted` - Issues we need or would love help from the community to resolve.
-- `question` - Issues for general questions regarding the API, in most cases this can be handled by e-mail instead. See [this page](https://quotesnewtab.com/about) for contact information.
-- `wontfix` - Issues with an identified bug that will not be fixed.
+* `bug` - Issues that are identifying a bug.
+* `docs` - Issues for improving or updating our documentation.
+* `duplicate` - Issues that already exist.
+* `feature` - Issues asking for a new feature to be added, or an existing one to be extended or modified.
+* `help wanted` - Issues we need or would love help from the community to resolve.
+* `question` - Issues for general questions regarding the API, in most cases this can be handled by e-mail instead. See [this page](https://quotesnewtab.com/about) for contact information.
+* `wontfix` - Issues with an identified bug that will not be fixed.
 
 For a complete look at our labels, see the [project labels page](https://github.com/quotesnewtab/api/labels).
 
@@ -83,7 +82,7 @@ Time of bug: 2019-04-05 14:31:38
 
 1. Make a `GET` request to endpoint `https://api.quotesnewtab.com/v1/quotes/random`
 2. Get response.
- 
+
 ### Actual behavior:
 
 Response is empty.
