@@ -21,10 +21,10 @@
 ## Usage
 
 There are three publicly open endpoints available for use:
-```bash
-GET  https://api.quotesnewtab.com/v1/quotes
-GET  https://api.quotesnewtab.com/v1/quotes/:id
-GET  https://api.quotesnewtab.com/v1/quotes/random
+```shell
+$ curl https://api.quotesnewtab.com/v1/quotes
+$ curl https://api.quotesnewtab.com/v1/quotes/:id
+$ curl https://api.quotesnewtab.com/v1/quotes/random
 ```
 All endpoints return [JSON-encoded](http://www.json.org/) data. Quote `:id` can be found [here](https://quotesnewtab.com/quotes).
 
