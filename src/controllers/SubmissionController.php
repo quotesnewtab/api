@@ -107,14 +107,27 @@ class SubmissionController extends Controller {
   /**
    * Decline a submission by ID.
    */
-  public function decline($request, $response, $id) {
+  public function reject($request, $response, $id) {
     Submission::whereId($id)->update([
       'accepted' => false
     ]);
 
     return $response->withStatus(200)
       ->withHeader('Content-Type', 'application/json')
-      ->write(json_encode(array('message' => 'Submission was declined.'), JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+      ->write(json_encode(array('message' => 'Submission was rejected.'), JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
+  }
+
+  /**
+   * Undo a submission by ID.
+   */
+  public function undo($request, $response, $id) {
+    Submission::whereId($id)->update([
+      'accepted' => null
+    ]);
+
+    return $response->withStatus(200)
+      ->withHeader('Content-Type', 'application/json')
+      ->write(json_encode(array('message' => 'Submission was reverted to default value.'), JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));
   }
 
   /**
