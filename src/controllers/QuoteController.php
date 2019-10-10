@@ -10,7 +10,7 @@ class QuoteController extends Controller {
   public function create($request, $response) {
     $validation = $this->validator->validate($request, [
       'author' => v::notEmpty(),
-      'quote' => v::notEmpty()
+      'quote'  => v::notEmpty()
     ]);
 
     if ($validation->failed()) {
@@ -26,8 +26,8 @@ class QuoteController extends Controller {
     }
 
     Quote::create([
-      'author' => $request->getParam('author'),
-      'quote' => $request->getParam('quote'),
+      'author'    => $request->getParam('author'),
+      'quote'     => $request->getParam('quote'),
       'submitter' => $request->getParam('submitter'),
     ]);
 
@@ -86,7 +86,7 @@ class QuoteController extends Controller {
   public function update($request, $response, $id) {
     $validation = $this->validator->validate($request, [
       'author' => v::notEmpty(),
-      'quote' => v::notEmpty()
+      'quote'  => v::notEmpty()
     ]);
 
     if ($validation->failed()) {
@@ -102,8 +102,8 @@ class QuoteController extends Controller {
     }
 
     Quote::whereId($id)->update([
-      'author' => $request->getParam('author'),
-      'quote' => $request->getParam('quote'),
+      'author'    => $request->getParam('author'),
+      'quote'     => $request->getParam('quote'),
       'submitter' => $request->getParam('submitter'),
     ]);
 
