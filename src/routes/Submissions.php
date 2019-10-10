@@ -7,5 +7,6 @@ $app->group('/submissions', function() {
   $this->put   ('/{id:[0-9]+}'        , 'SubmissionController:update')->add(new AuthMiddleware($this->getContainer()));
   $this->delete('/{id:[0-9]+}'        , 'SubmissionController:delete')->add(new AuthMiddleware($this->getContainer()));
   $this->post  ('/{id:[0-9]+}/accept' , 'SubmissionController:accept')->add(new AuthMiddleware($this->getContainer()));
-  $this->post  ('/{id:[0-9]+}/decline', 'SubmissionController:decline')->add(new AuthMiddleware($this->getContainer()));
+  $this->post  ('/{id:[0-9]+}/reject', 'SubmissionController:reject')->add(new AuthMiddleware($this->getContainer()));
+  $this->post  ('/{id:[0-9]+}/undo', 'SubmissionController:undo')->add(new AuthMiddleware($this->getContainer()));
 })->add(new BlacklistedMiddleware($container));
