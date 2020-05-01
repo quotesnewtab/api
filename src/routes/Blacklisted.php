@@ -6,5 +6,5 @@ $app->group('/blacklisted', function() {
   $this->get   ('/'           , 'BlacklistedController:read'       )->add(new AuthMiddleware($this->getContainer()));
   $this->put   ('/{id:[0-9]+}', 'BlacklistedController:update'     )->add(new AuthMiddleware($this->getContainer()));
   $this->delete('/{id:[0-9]+}', 'BlacklistedController:delete'     )->add(new AuthMiddleware($this->getContainer()));
-  $this->get   ('/status'     , 'BlacklistedController:checkStatus')->add(new AuthMiddleware($this->getContainer()));
+  $this->get   ('/status'     , 'BlacklistedController:checkStatus');
 })->add(new RateLimitMiddleware($container));
